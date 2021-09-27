@@ -1,0 +1,199 @@
+﻿<Window x:Class="hireme_1.profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="profile" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <TextBlock Text="Hireme" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="2" >
+
+            <Button Click="Button_Click"  Background="transparent" Height="30" HorizontalContentAlignment="Left" Margin="10,0,0,0"  BorderThickness="0">
+                <TextBlock Text="Home > Profile" FontSize="20" FontWeight="Light" TextDecorations="Underline" />
+
+            </Button>
+
+
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\user.png" Height="40" Width="40"/>
+                    <StackPanel Orientation="Vertical" Margin="15,0,0,0">
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Text="Max John" FontWeight="Regular" FontSize="16"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Text="Data science,Data Analyst" FontWeight="Light" FontSize="16"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" >
+                            <TextBlock Text="Mannheim,Germany" FontWeight="Light" FontSize="16"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+
+            </StackPanel>
+    
+            <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                <TextBlock Text="Profile Strength:" FontSize="18" FontWeight="Medium"/>
+                <TextBlock Text=" Intermediate" FontSize="18" FontWeight="Regular"/>
+                <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Height="25" Width="25"/>
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Height="25" Width="25"/>
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Height="25" Width="25"/>
+
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                <TextBlock Text="Experience" FontSize="20" FontWeight="Medium" Margin="0,10,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Tera Data" FontWeight="Medium" FontSize="16" />
+                    <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                        <TextBlock Text="                          2018-2020" FontWeight="Light" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="50,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                        </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <TextBlock Text="Data analyst" FontWeight="Regular" FontSize="16" />
+                </StackPanel>
+     
+                    
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="SAP" FontWeight="Medium" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                            <TextBlock Text="                                   2020-present" FontWeight="Light" FontSize="16" />
+                            <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <TextBlock Text="Data Analyst" FontWeight="Regular" FontSize="16" />
+                </StackPanel>
+
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                <TextBlock Text="Project" FontSize="20" FontWeight="Medium" Margin="0,10,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Fake News Detection" FontWeight="Medium" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                            <TextBlock Text="Jan 2020-Jun 2020" FontWeight="Light" FontSize="16" />
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Our study explores different textual properties that" FontWeight="Regular" FontSize="16"/>
+                        <TextBlock Text="can be used to distinguish fake contents from real." FontWeight="Regular" FontSize="16"/>
+
+                    </StackPanel>
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Sentiment Analysis" FontWeight="Medium" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                            <TextBlock Text="  Mar 2019-Nov 2019" FontWeight="Light" FontSize="16" />
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Natural language processing technique to determine" FontWeight="Regular" FontSize="16" />
+                        <TextBlock Text="whether data is positive, negative or neutral." FontWeight="Regular" FontSize="16" />
+                    </StackPanel>
+
+                </StackPanel>
+
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                <TextBlock Text="Education" FontSize="20" FontWeight="Medium" Margin="0,10,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Master of Engineering" FontWeight="Medium" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                            <TextBlock Text="       2016-2018" FontWeight="Light" FontSize="16" />
+                            <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <TextBlock Text="1.8" FontWeight="Regular" FontSize="16" />
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Bachelor of Engineering" FontWeight="Medium" FontSize="16" />
+                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                            <TextBlock Text="    2011-2015" FontWeight="Light" FontSize="16" />
+                            <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\pencil.png" Height="18" Width="18"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="18" Width="18" Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <TextBlock Text="A" FontWeight="Regular" FontSize="16" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="430,10,0,0" HorizontalAlignment="Left">
+                    <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.5">
+                        <Button x:Name="Save_bt" Content="Save" Background="#4B61D1" Height="40" Width="150" Foreground="White" FontWeight="Bold" FontSize="18">
+                        </Button>
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

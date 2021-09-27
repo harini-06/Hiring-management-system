@@ -1,0 +1,184 @@
+﻿<Window x:Class="hireme_1.resume"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="resume" Height="800" Width="1000">
+    <Grid>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" >
+            <StackPanel Orientation="Vertical">
+
+
+                <StackPanel Orientation="Vertical" Height="466" Margin="20,20,0,0" Width="300" HorizontalAlignment="Left" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" Margin="0,10,0,0">
+
+                        <Image Source="C:\Users\Harini Iyer\Downloads\user.png" Height="100" Width="100"/>
+                        <TextBlock Text="Max John" FontSize="20" FontWeight="Medium" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\mortarboard.png" Height="30" Width="30" Margin="50,10,0,0" HorizontalAlignment="Left"/>
+                        <TextBlock Text="SRH Berlin" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\suitcase.png" Height="30" Width="30" Margin="50,10,0,0" HorizontalAlignment="Left"/>
+                        <TextBlock Text="Siemens Inc" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\place.png" Height="30" Width="30" Margin="50,10,0,0" HorizontalAlignment="Left"/>
+                        <TextBlock Text="Berlin,Germany" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\smartphone.png" Height="30" Width="30" Margin="50,10,0,0" HorizontalAlignment="Left"/>
+                        <TextBlock Text="+49 0187530097" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean (1).png" Height="20" Width="20" Margin="80,20,0,0" HorizontalAlignment="Left"/>
+                        <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean (1).png" Height="20" Width="20" Margin="10,20,0,0" HorizontalAlignment="Left"/>
+                        <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean (1).png" Height="20" Width="20" Margin="10,20,0,0" HorizontalAlignment="Left"/>
+                        <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean (1).png" Height="20" Width="20" Margin="10,20,0,0" HorizontalAlignment="Left"/>
+                        <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean (1).png" Height="20" Width="20" Margin="10,20,0,0" HorizontalAlignment="Left"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Border BorderBrush="Black" BorderThickness="2.5" Margin="0,20,0,0" Padding="5" CornerRadius="10" Width="100" >
+                            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                                <TextBlock Text="English" FontSize="18" FontWeight="Regular" FontFamily="opensans"/>
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="2.5" Margin="0,10,0,0" Padding="5" CornerRadius="10" Width="100" >
+                            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                                <TextBlock Text="German" FontSize="18" FontWeight="Regular" FontFamily="opensans"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Height="150" Margin="20,10,0,0" Width="300" HorizontalAlignment="Left" Background="AliceBlue">
+                    <TextBlock Text="Skills" FontSize="20" FontWeight="Medium" Foreground="Black"  Margin="110,10,0,0"/>
+                    <StackPanel Orientation="Vertical" Margin="20,0,0,0" >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\check-mark.png" Height="20" Width="20" Margin="30,10,0,0" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Team Player" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\check-mark.png" Height="20" Width="20" Margin="30,10,0,0" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Collaborative" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\check-mark.png" Height="20" Width="20" Margin="30,10,0,0" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Time Player" FontSize="18" FontWeight="Regular" Margin="10,10,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Height="80" Margin="20,10,0,0" Width="300" HorizontalAlignment="Left" Background="AliceBlue">
+                    <TextBlock Text="Languages" FontSize="20" FontWeight="Medium" Foreground="Black"  Margin="90,10,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="C++,JAVA,Python,C#" FontSize="18" FontWeight="Regular" Margin="55,10,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="2"  >
+                <StackPanel Orientation="Vertical" Margin="20,20,0,0">
+                    <TextBlock Text="Profile Summary" FontWeight="Medium" FontSize="20"/>
+                    <StackPanel Orientation="Vertical" Height="80" Margin="0,10,0,0" Width="420" HorizontalAlignment="Left" Background="AliceBlue">
+                        <TextBlock Text="I am a software engineer with 7 to 8 years" FontSize="18" FontWeight="Regular" Foreground="Black"  Margin="5,10,0,0"/>
+                        <TextBlock Text="of experience in handling Multinational clients." FontSize="18" FontWeight="Regular" Foreground="Black"  Margin="5,10,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="20,20,0,0">
+                    <TextBlock Text="Experience" FontWeight="Medium" FontSize="20"/>
+                    <StackPanel Orientation="Vertical" Height="270" Margin="0,10,0,0" Width="420" HorizontalAlignment="Left" Background="AliceBlue">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal" Margin="5,10,0,0">
+                                    <TextBlock Text="Tera Data" FontWeight="Medium" FontSize="16" />
+                                    <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                                        <TextBlock Text="2018-Present" FontWeight="Light" FontSize="16" />
+                                    </StackPanel>
+
+                                </StackPanel>
+                                <TextBlock Text="Data analyst" FontWeight="Regular" FontSize="16" Margin="5,0,0,0"/>
+
+                                <StackPanel Orientation="Horizontal" Margin="5,10,0,0">
+                                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                                    <StackPanel Orientation="Vertical" Margin="5,20,0,0">
+                                        <TextBlock Text="Provided written knowledge transfer" FontWeight="Regular" FontSize="18"/>
+                                        <TextBlock Text="material " FontWeight="Regular" FontSize="18"/>
+                                    </StackPanel>
+
+
+
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                                    <StackPanel Orientation="Vertical" Margin="5,20,0,0">
+                                        <TextBlock Text="Maintaining and improving existing" FontWeight="Regular" FontSize="18"/>
+                                        <TextBlock Text="codebases" FontWeight="Regular" FontSize="18"/>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Margin="5,10,0,0">
+                                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                                    <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                                        <TextBlock Text="Improving system quality" FontWeight="Regular" FontSize="18"/>
+                                    </StackPanel>
+
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+                        <TextBlock Text="Education" FontWeight="Medium" FontSize="20"/>
+                        <StackPanel Orientation="Vertical" Height="120" Margin="0,10,0,0" Width="420" HorizontalAlignment="Left" Background="AliceBlue">
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" Margin="5,10,0,0">
+                                        <TextBlock Text="SRH Berlin" FontWeight="Medium" FontSize="16" />
+                                        <StackPanel Orientation="Horizontal" Margin="250,0,0,0">
+                                            <TextBlock Text="2015-2017" FontWeight="Light" FontSize="16" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <TextBlock Text="Master of Science(Applied CS)" FontWeight="Regular" FontSize="16" Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" Margin="5,10,0,0">
+                                        <TextBlock Text="Munich universtat" FontWeight="Medium" FontSize="16" />
+                                        <StackPanel Orientation="Horizontal" Margin="195,0,0,0">
+                                            <TextBlock Text="2013-2015" FontWeight="Light" FontSize="16" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <TextBlock Text="Bachelor of Science(Computer Science)" FontWeight="Regular" FontSize="16" Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+
+
+
+
+
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="333,90,0,0" HorizontalAlignment="Left">
+                    <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.5">
+                        <Button x:Name="inv_bt" Content="Invite" Background="#4B61D1" Height="30" Width="100" Foreground="White" FontWeight="Bold" FontSize="20">
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

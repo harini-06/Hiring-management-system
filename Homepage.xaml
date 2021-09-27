@@ -1,0 +1,305 @@
+﻿<Window x:Class="hireme_1.Homepage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="Homepage" Height="800" Width="1000">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <TextBlock Text="Hireme" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="2">
+            <StackPanel x:Name="upper_stack" Orientation="Horizontal" >
+                <StackPanel Orientation="Vertical" Margin="30,20,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-male-user-60.png" Height="40" Width="40" HorizontalAlignment="Left" Margin="30,0,0,0">
+                    </Image>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Harini Iyer" Foreground="Black" FontSize="18" FontWeight="Medium" Margin="8,0,0,0" TextDecorations="Underline"/>
+                        <Button Click="Button_Click" Background="transparent" Width="30" Height="30" ToolTip="Edit Profile" BorderThickness="0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\icons8-edit-60.png" Width="20" Height="20"/>
+                        </Button>
+                    </StackPanel>
+
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="40,20,0,0" Background="AliceBlue" Height="130" Width="200" VerticalAlignment="Top" >
+                    <TextBlock Text=" Your status" FontSize="20" FontWeight="Medium" Foreground="Black"  Margin="40,0,0,0"/>
+                    <StackPanel Orientation="Vertical" Margin="40,5,0,0" >
+                        <TextBlock Text=" Applied     : 2" FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                        <TextBlock Text=" Rejected    : 1" FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                        <TextBlock Text=" In-Process : 1" FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                        <TextBlock Text=" Selected    : 0" FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" >
+
+                    <StackPanel Orientation="Vertical" Margin="40,20,0,0" Background="AliceBlue" Height="110" Width="165" VerticalAlignment="Top" >
+                        <TextBlock Text=" Your skills" FontSize="20" FontWeight="Medium" Foreground="Black" />
+                        <StackPanel Orientation="Horizontal" Margin="2,5,0,0" >
+                            <TextBlock Text=" Analytical" FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                            <StackPanel Orientation="Horizontal" Margin="3,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="2,0,0,0" >
+                            <TextBlock Text=" Logical    " FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                            <StackPanel Orientation="Horizontal" Margin="3,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="2,0,0,0" >
+                            <TextBlock Text=" Frontend " FontSize="18" FontWeight="Regular" Foreground="Black"/>
+                            <StackPanel Orientation="Horizontal" Margin="3,0,0,0">
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                                <Image Source="C:\Users\Harini Iyer\Downloads\icons8-star-filled-60.png" Width="15" Height="15"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" Margin="40,13,0,0">
+                        <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.5">
+                            <Button Click="assmt_v_Click" x:Name="assmt_v" Content="View Assessment"  Background="#4B61D1" Width="165" Height="40" Foreground="White" FontWeight="Bold" FontSize="16" >
+                            </Button>
+                        </Border>
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="low_stack" Orientation="Vertical" Margin="30,30,0,0">
+                <TextBlock Text="Jobs" FontWeight="ExtraBold" FontSize="20" Foreground="Black" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0" >
+                    <Border BorderBrush="#4B61D1" BorderThickness="2.5" Margin="0,5,0,0" Padding="5" CornerRadius="10" Width="600">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical" Margin="0,5,0,0">
+                                <TextBlock Text="Select fields:" FontSize="16" FontWeight="Medium" Foreground="Black"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="0,5,0,0" Padding="5" CornerRadius="10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Information Technology" FontSize="10" FontWeight="Light"/>
+                                        <Image Source="C:\Users\Harini Iyer\Downloads\cancel.png" Height="15" Width="15" Margin="4,0,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="10,5,0,0" Padding="5" CornerRadius="10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="IT-Security" FontSize="10" FontWeight="Light"/>
+                                        <Image Source="C:\Users\Harini Iyer\Downloads\cancel.png" Height="15" Width="15" Margin="4,0,0,0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="10,5,0,0" Padding="5" CornerRadius="10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Data science" FontSize="10" FontWeight="Light"/>
+                                        <Image Source="C:\Users\Harini Iyer\Downloads\cancel.png" Height="15" Width="15" Margin="4,0,0,0"/>
+                                    </StackPanel>
+                                </Border>
+
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+                <StackPanel Name="for_all_jobs" Orientation="Horizontal" Margin="0,20,0,0">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical"  Width="280" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="0,0,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="LLC-Developer" FontWeight="Medium" FontSize="18" />
+                                        <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="45,0,0,0" Padding="5" CornerRadius="10">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Applied" FontSize="15" FontWeight="Regular" FontFamily="opensans"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="3-5 years" FontSize="15" FontWeight="Light"/>
+                                        <TextBlock Text="Mannheim,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 10h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical"  Width="280" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="0,10,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="BHSG-Manager" FontWeight="Medium" FontSize="18" />
+                                        <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="35,0,0,0" Padding="5" CornerRadius="10">
+                                            <StackPanel Orientation="Horizontal" >
+                                                <TextBlock Text="Applied" FontSize="15" FontWeight="Regular" FontFamily="opensans"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="7-8 years" FontSize="15" FontWeight="Light"/>
+                                        <TextBlock Text="Munich,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 9h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical"  Width="280" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="0,10,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="UIC-Analyst" FontWeight="Medium" FontSize="18" />
+                                        <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="60,0,0,0" Padding="5" CornerRadius="10">
+                                            <StackPanel Orientation="Horizontal" >
+                                                <TextBlock Text="Rejected" FontSize="15" FontWeight="Regular" FontFamily="opensans"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="0-2 years" FontSize="15" FontWeight="Light"/>
+                                        <TextBlock Text="Heidelberg,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 9h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical"  Width="319" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="30,0,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="SAP-Data Analyst" FontWeight="Medium" FontSize="18" />
+                                        <StackPanel Orientation="Horizontal" >
+                                            <Border CornerRadius="8" BorderThickness="1.0" BorderBrush="#4B61D1" Padding="1.5" Width="50" Margin="50,0,0,0">
+                                                <Button Click="view_Click" x:Name="view" Content="View" FontSize="15" FontWeight="Regular" FontFamily="opensans" Foreground="Black" Background="White" BorderThickness="0"/>
+                                            </Border>
+                                        </StackPanel>
+
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="5-10 years" FontSize="15" FontWeight="Light" Margin="0,5,0,0"/>
+                                        <TextBlock Text="Heidelberg,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 6h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical"  Width="319" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="30,10,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="Amazon-Lead" FontWeight="Medium" FontSize="18" />
+                                        <Border BorderBrush="#4B61D1" BorderThickness="1.5" Margin="60,0,0,0" Padding="5" CornerRadius="10">
+                                            <StackPanel Orientation="Horizontal" >
+                                                <TextBlock Text="In-Process" FontSize="15" FontWeight="Regular" FontFamily="opensans"/>
+                                            </StackPanel>
+                                        </Border>
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="2-3 years" FontSize="15" FontWeight="Light"/>
+                                        <TextBlock Text="Mannheim,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 10h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical"  Width="319" >
+                            <Border BorderBrush="#4B61D1" BorderThickness="1.0" Margin="30,10,0,0" Padding="5" CornerRadius="0">
+                                <StackPanel Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="Bosch-Intern" FontWeight="Medium" FontSize="18" />
+                                        <StackPanel Orientation="Horizontal" >
+                                            <Border CornerRadius="8" BorderThickness="1.0" BorderBrush="#4B61D1" Padding="1.5" Width="50" Margin="80,0,0,0">
+                                                <Button x:Name="view_1" Content="View" FontSize="15" FontWeight="Regular" FontFamily="opensans" Foreground="Black" Background="White" BorderThickness="0"/>
+                                            </Border>
+                                        </StackPanel>
+
+
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Vertical" >
+                                        <TextBlock Text="0-2 years" FontSize="15" FontWeight="Light" Margin="0,5,0,0"/>
+                                        <TextBlock Text="Munich,Germany" FontSize="15" FontWeight="Light"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
+                                            <Image Source="C:\Users\Harini Iyer\Downloads\check (1).png" Height="15" Width="15"/>
+                                            <TextBlock Text="Posted 4h ago" FontSize="15" FontWeight="Light" Margin="5,0,0,0"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+</Window>

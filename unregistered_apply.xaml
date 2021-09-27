@@ -1,0 +1,34 @@
+﻿<Window x:Class="hireme_1.unregistered_apply"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="unregistered_apply" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="800">
+            <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Center">
+                <TextBlock Text="Please Register!!!" FontSize="20" FontWeight="Bold" FontFamily="roboto" Width="800" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="150,30,0,0">
+                <TextBlock Text="Email" FontSize="18" FontWeight="Regular" FontFamily="roboto" Width="200"/>
+                <TextBox Name="tbx_Email" Width="300" BorderThickness="1.5" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="150,30,0,0">
+                <TextBlock Text="Password" FontSize="18" FontWeight="Regular" FontFamily="roboto" Width="200"/>
+                <TextBox Name="tbx_PW" Width="300"  BorderThickness="1.5" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="150,30,0,0">
+                <TextBlock Text="Repeat Password" FontSize="18" FontWeight="Regular" FontFamily="roboto" Width="200"/>
+                <TextBox Name="tbx_RPW" Width="300"  BorderThickness="1.5" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Center">
+                <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.5">
+                    <Button x:Name="Bt_regi" Content="Register"  Background="#4B61D1" Height="30" Width="150" Foreground="White" FontWeight="Bold" FontSize="20" >
+                    </Button>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

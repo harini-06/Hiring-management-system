@@ -1,0 +1,87 @@
+﻿<Window x:Class="hireme_1.jobdetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="jobdetails" Height="800" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <TextBlock Text="Hireme" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" HorizontalAlignment="Left">
+
+            <Button Click="Button_Click" Background="transparent" Height="30" HorizontalContentAlignment="Left" Margin="10,0,0,0" BorderThickness="0" >
+                <TextBlock Text="Home" FontSize="20" FontWeight="Light" TextDecorations="Underline" />
+
+            </Button>
+
+            <StackPanel Orientation="Vertical" Margin="10,10,0,0">
+                <TextBlock Text="SAP-Data Analyst" FontWeight="bold" FontSize="30"/>
+                <StackPanel Orientation="Vertical" Height="30">
+                    <TextBlock Text="Mannheim,Germany" FontSize="25" FontWeight="Medium"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="0,0,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\suitcase.png" Height="40" Width="40"/>
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Full time" FontSize="25" FontWeight="Regular"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="0,0,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\businessman.png" Height="40" Width="40"/>
+                    <StackPanel Orientation="Horizontal" Margin="10,5,0,0">
+                        <TextBlock Text="50,000+ Employees" FontSize="25" FontWeight="Regular"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="0,0,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\open-book.png" Height="40" Width="40"/>
+                    <StackPanel Orientation="Horizontal" Margin="10,5,0,0">
+                        <TextBlock Text="Information Technology" FontSize="25" FontWeight="Regular"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,40,0,0" HorizontalAlignment="Left">
+                    <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.0"  Height="40">
+                        <Button  x:Name="app" Content="Apply"  Background="#4B61D1" Height="30" Width="120" Foreground="White" FontWeight="Bold" FontSize="20" />
+                    </Border>
+                    <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.0" Height="40" Margin="10,0,0,0">
+                        <Button Click="sv_Click" x:Name="sv" Content="Save"  Background="#4B61D1" Height="30" Width="120" Foreground="White" FontWeight="Bold" FontSize="20"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
+                    <TextBlock Text="Requirements:" FontWeight="Medium" FontSize="25"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                    <TextBlock Text=" Role:Data Analyst" FontWeight="Regular" FontSize="20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                    <TextBlock Text=" Work Experience : 5-10 Years" FontWeight="Regular" FontSize="20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8"  />
+                    <TextBlock Text=" Good communication skills" FontWeight="Regular" FontSize="20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8" />
+                    <TextBlock Text=" Proficiency in Statistics,Data Analysis" FontWeight="Regular" FontSize="20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\dry-clean.png" Height="8" Width="8" />
+                    <TextBlock Text=" Should have worked in excel and tools like PowerBI,Tableau" FontWeight="Regular" FontSize="20"/>
+                </StackPanel>
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

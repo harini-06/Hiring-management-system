@@ -1,0 +1,72 @@
+﻿<Window x:Class="hireme_1.Detailedassessment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="Detailedassessment" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <TextBlock Text="Hireme" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="2" >
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0" >
+                <TextBlock Text="Home" FontSize="20" FontWeight="Light" TextDecorations="Underline"/>
+                <TextBlock Text=">View Assessment" FontSize="20" FontWeight="Light"/>
+                <TextBlock Text=">Business Analytics" FontSize="20" FontWeight="Light"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" >
+                <StackPanel Orientation="Horizontal" Margin="0,50,0,0" HorizontalAlignment="Center">
+                    <TextBlock Text="Assessment" FontSize="35" FontWeight="Bold" FontFamily="roboto" Width="200" TextAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,30,0,0">
+                    <TextBlock Text="Before you Begin" FontSize="20" FontWeight="Medium"/>
+                </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,10,0,0">
+                <TextBlock Text="Each Quiz must be completed in one session,If you don't pass," FontSize="20" FontWeight="Regular"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <TextBlock Text="you won't get stars." FontSize="20" FontWeight="Regular"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <TextBlock Text="Overview" FontSize="20" FontWeight="Medium"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Image Source="C:\Users\Harini Iyer\Downloads\riddle.png" Height="30" Width="30"/>
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text="MCQs" FontSize="20" FontWeight="Regular"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Image Source="C:\Users\Harini Iyer\Downloads\clock.png" Height="30" Width="30"/>
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text="15 Minutes" FontSize="20" FontWeight="Regular"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Image Source="C:\Users\Harini Iyer\Downloads\check-mark.png" Height="30" Width="30"/>
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text="75% required to pass and get stars" FontSize="20" FontWeight="Regular"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Image Source="C:\Users\Harini Iyer\Downloads\reload.png" Height="30" Width="30"/>
+                <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                    <TextBlock Text="Retry in 2 Months" FontSize="20" FontWeight="Regular"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0" HorizontalAlignment="Center">
+                <Border CornerRadius="8" BorderThickness="1.5" BorderBrush="#4B61D1" Background="#4B61D1" Padding="1.5">
+                    <Button x:Name="start" Content="Start" Background="#4B61D1" Height="50" Width="150" Foreground="White" FontWeight="Bold" FontSize="26">
+                    </Button>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

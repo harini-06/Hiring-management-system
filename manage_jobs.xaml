@@ -1,0 +1,191 @@
+﻿<Window x:Class="hireme_1.managejobs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="managejobs" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <Image Source="C:\Users\Harini Iyer\Downloads\abc.jpg" Width="70" Height="40"/>
+            <TextBlock Text="ABC Corporation" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White"/>
+        </StackPanel>
+
+        <Grid x:Name ="Grd_Menue" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="300" Margin="0,150,0,-518.599" Background="#4B61D1"  Grid.ColumnSpan="3">
+            <Image HorizontalAlignment="Right" Source="C:\Users\Harini Iyer\Downloads\square.png" Width="25"   Margin="-3.186,-14.333,-3.929,372" />
+            <StackPanel Margin="0,184,79,66" Orientation="Vertical">
+                <Button Click="Btn_Applicants_Click" x:Name="Btn_Applicants" HorizontalAlignment="Right" Content="Applicants" VerticalAlignment="Top" Margin="-200,-100,0,0" FontSize="16" Background="LavenderBlush" FontWeight="ExtraBold"  Height="72" Width="200"/>
+            </StackPanel>
+            <StackPanel Margin="0,184,79,66" Orientation="Vertical">
+                <Button x:Name ="Btn_Managejobs" HorizontalAlignment="Right" Content="Manage Jobs"  VerticalAlignment="Top" Margin="-200,30,0,0" FontSize="16" Background="LavenderBlush" FontWeight="ExtraBold"  Height="72" Width="200"/>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2">
+
+                <TextBlock Text="Job Listing" Margin="420,70,0,0" FontSize="25" FontWeight="Bold"/>
+            <Border BorderBrush="Black" BorderThickness="0.4" Margin="400,20,0,0" Padding="2" CornerRadius="5" Width="650" HorizontalAlignment="Left" Height="500">
+
+                <StackPanel Orientation="Vertical"  Margin="0,20,0,0">
+                    <Button Click="Button_Click" Background="transparent" Width="40" ToolTip="Post a new job" BorderThickness="0">
+                        <Image Source="C:\Users\Harini Iyer\Downloads\add-page.png" Height="40" Width="40"  />
+                    </Button>
+                    
+
+                    <StackPanel Orientation="Horizontal" Margin="0,30,0,0">
+                        <StackPanel Orientation="Vertical" Margin="20,0,0,0">
+                            <TextBlock Text="Developer" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="90,0,0,0">
+                            <TextBlock Text="From: 03/07/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 11/07/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 1hr ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                            <TextBlock Text="Data Analyst" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="70,0,0,0">
+                            <TextBlock Text="From: 03/07/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 11/07/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 1hr ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                            <TextBlock Text="Security Engineer" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="30,0,0,0">
+                            <TextBlock Text="From: 02/07/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 09/07/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 5hr ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                            <TextBlock Text="Intern-Network" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="47,0,0,0">
+                            <TextBlock Text="From: 29/06/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 06/07/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 5d ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                            <TextBlock Text="Consultant" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="88,0,0,0">
+                            <TextBlock Text="From: 28/06/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 05/07/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 6d ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                            <TextBlock Text="GRC Manager" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="64,0,0,0">
+                            <TextBlock Text="From: 20/06/2021" FontSize="18" FontWeight="Regular"/>
+                            <TextBlock Text="Till: 27/06/2021" FontSize="18" FontWeight="Regular"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\edit-page.png" Height="40" Width="40"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,0,0,0">
+                            <Image Source="C:\Users\Harini Iyer\Downloads\bin.png" Height="40" Width="40"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30,10,0,0">
+                            <TextBlock Text="Posted 7d ago" FontSize="18" FontWeight="Medium"/>
+                        </StackPanel>
+                    </StackPanel>
+
+
+                </StackPanel>
+
+                        
+                        
+
+            </Border>
+
+
+        </StackPanel>
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </Grid>
+</Window>

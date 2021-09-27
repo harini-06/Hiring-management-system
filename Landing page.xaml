@@ -1,0 +1,114 @@
+﻿<Window x:Class="hireme_1.Landing_page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hireme_1"
+        mc:Ignorable="d"
+        Title="Landing_page" Height="800" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#4B61D1" >
+            <TextBlock Text="Hireme" FontSize="30" FontWeight="Bold" FontFamily="roboto" VerticalAlignment="Center" Padding="5" Foreground="White" Margin="30,0,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="20,30,0,0">
+            <StackPanel Orientation="Vertical" >
+                <TextBlock Text="Hire me" FontSize="70" FontWeight="Bold" FontFamily="roboto" Padding="10" Foreground="#4B61D1"/>
+                <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                    <TextBlock Text="Perfect job search..." FontSize="30" FontWeight="Regular" FontFamily="roboto" Foreground="#4B61D1"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10,40,0,0" Height="100">
+                    <Button Click="Looking_for_job_Click" x:Name="Looking_for_job" Content="Looking for job" HorizontalAlignment="Left" FontFamily="roboto" FontSize="26" FontWeight="Heavy" Height="100" Width="350" Background="#4B61D1" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10,50,0,0" HorizontalAlignment="Left"  Width="350">
+                    <TextBlock Text="Already an user? Sign In" FontWeight="Regular" FontSize="13"/>
+                    <Border BorderBrush="#4B61D1" Opacity="20" BorderThickness="1.0" Padding="10" Margin="0,10,0,0">
+
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                                <TextBlock Text="Email" FontSize="18" FontWeight="Regular" FontFamily="roboto" Width="100"/>
+                                <TextBox Name="tbx_Email" Width="200" BorderThickness="1.5" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                                <TextBlock Text="Password" FontSize="18" FontWeight="Regular" FontFamily="roboto" Width="100"/>
+                                <TextBox Name="tbx_PW" Width="200"  BorderThickness="1.5" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="90,20,0,0">
+                                <Border CornerRadius="8" BorderThickness="1.0" BorderBrush="#4B61D1" Padding="1.5" Width="100" HorizontalAlignment="Left" Margin="20,0,0,0">
+                                    <Button Click="Sign_In_Click" x:Name="Sign_In" Content="Sign In" Background="White" Height="30" Width="100" Foreground="#4B61D1" FontWeight="Medium" FontSize="20" BorderThickness="0"  />
+                                </Border>
+
+                            </StackPanel>
+
+
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Margin="150,20,0,0">
+                        <TextBlock Text="OR" FontWeight="Medium" FontSize="25"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,20,0,0">
+                        <Border CornerRadius="8" BorderThickness="1.0" BorderBrush="#4B61D1" Padding="1.5" Width="350">
+                            <Button Click="register_Click" x:Name="register" Content="Register as company" Height="30" Foreground="#4B61D1" Background="White" FontWeight="Medium" FontSize="20" BorderThickness="0"/>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+
+
+
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="2" Width="500" Margin="150,28,0,0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="500">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\multiple-users-silhouette.png" Height="60" Width="60"/>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBox x:Name="wider_r" Text="Wider Reach " FontFamily="roboto" FontWeight="Medium" FontSize="29" BorderThickness="0"/>
+                        <TextBox x:Name="con" Text="1M+ Jobs" FontWeight="Light" FontFamily="roboto" FontSize="20" BorderThickness="0" />
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="500">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\apple.png" Height="60" Width="60"/>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBox x:Name="compbrn" Text="Company Branding" FontFamily="roboto" FontWeight="Medium" FontSize="29" BorderThickness="0"/>
+                        <TextBox x:Name="companies" Text="Apple Inc,BMW,Bosch,SAP" FontWeight="Light" FontFamily="roboto" FontSize="20" BorderThickness="0" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="500" Margin="0,10,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-personal-growth-50.png" Height="60" Width="60"/>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBox x:Name="users_joined" Text="1.5M users have joined" FontFamily="roboto" FontWeight="Medium" FontSize="29" BorderThickness="0"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="500" Margin="0,10,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-medal-64.png" Height="60" Width="60"/>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBox x:Name="skill_ass" Text="Skill Assessment" FontFamily="roboto" FontWeight="Medium" FontSize="29" BorderThickness="0"/>
+                        <TextBox x:Name="B_ur_res" Text="Boost your Resume" FontWeight="Light" FontFamily="roboto" FontSize="20" BorderThickness="0" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="500" Margin="0,10,0,0">
+                    <Image Source="C:\Users\Harini Iyer\Downloads\icons8-thumbs-up-96.png" Height="60" Width="60"/>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBox x:Name="Recom" Text="Recommendation" FontFamily="roboto" FontWeight="Medium" FontSize="29" BorderThickness="0"/>
+                        <TextBox x:Name="L_s" Text="Less searching,more hiring" FontWeight="Light" FontFamily="roboto" FontSize="20" BorderThickness="0" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

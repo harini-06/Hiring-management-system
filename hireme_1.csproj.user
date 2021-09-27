@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="company_page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Homepage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="jobdetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Landing page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="manage_jobs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Post_jobs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="resume.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="company_home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="unregistered_apply.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Viewassessment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="company_page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Homepage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="jobdetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Landing page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="manage_jobs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Post_jobs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="resume.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="company_home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="unregistered_apply.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Viewassessment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
